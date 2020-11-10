@@ -1,0 +1,12 @@
+python manage.py makemigrations
+python manage.py migrate
+python manage.py shell
+
+>>> from poorly_coded_store.models import *
+
+Product.objects.create(description="pen", price="1")
+Product.objects.create(description="book", price="20")
+Product.objects.create(description="cup", price="5")
+Product.objects.create(description="classes", price="10")
+Product.objects.create(description="tshirt", price="15")
+
